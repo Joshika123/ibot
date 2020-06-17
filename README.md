@@ -1,33 +1,4 @@
 # ibot
-ASSIGNMENT3
-
-PROBLEM 1:
- A = [ 3, 6, 4; 1, 5, 0; 0, 7, 7 ]
-A =
-
-   3   6   4
-   1   5   0
-   0   7   7
-
->> B = [ 1; 2; 3 ]
-B =
-
-   1
-   2
-   3
-
->> x = A\B
-x =
-
-  -0.582418
-   0.516484
-  -0.087912
-  
-  ASSIGNMENT 3
-  
-  PROBLEM 2:
-   quad('x.*exp(-x.^(x/3))',0,5)
-ans =  0.96746
 
 ASSIGNMENT 4
 
