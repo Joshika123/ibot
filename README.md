@@ -36,5 +36,17 @@ x =
    quad('x.*exp(-x.^(x/3))',0,5)
 ans =  0.96746
 
+ASSIGNMENT 4
+
+PROBLEM1
+>> a = 5;
+>> b = 2;
+>> y = a.*randn(500,1) + b;
+>> stats = [ mean(y) std(y) ]
+stats =
+
+   1.6948   4.8709
+
+
 
 
