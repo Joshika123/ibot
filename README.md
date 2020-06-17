@@ -46,6 +46,18 @@ PROBLEM1
 stats =
 
    1.6948   4.8709
+   
+ASSIGNMENT4
+
+PROBLEM 2
+rep = 5000;
+>> flips = round(rand(1,rep));
+>> headEvent = cumsum(flips);
+>> totalEvent = 1:rep;
+>> headProbability = headEvent./totalEvent;
+>> Plot(totalEvent,headProbability,totalEvent,0.5*ones(1,rep));
+error: 'Plot' undefined near line 1 column 1
+>> plot(totalEvent,headProbability,totalEvent,0.5*ones(1,rep));
 
 
 
