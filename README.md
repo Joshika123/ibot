@@ -59,6 +59,19 @@ rep = 5000;
 error: 'Plot' undefined near line 1 column 1
 >> plot(totalEvent,headProbability,totalEvent,0.5*ones(1,rep));
 
+ASSIGNMENT 4
+
+PROBLEM 3
+lambda=5;
+count=1000;
+x=poissrnd(lambda,1,count);
+xMin=min(x);
+xMax=max(x);
+H=histogram(x,'BinEdges',[xMin:xMax],'Normalization','probability');
+hold on;
+index=linspace(xMin,xMax,count);
+plot(index,poisspdf(lambda,index),'r');
+
 
 
 
