@@ -19,3 +19,20 @@ Z0=rand(5);
 >>     contour(X1,Y1,Z1);
 >> colorbar;
 >> caxis([0,1]);
+
+PRBLM7
+
+ function smoothed=rectFilt(x,width)
+if mod(width,2)==0
+        disp('warning: width is increased by one for symmetry');
+        width=width+1;
+    end
+half=(width-1)/2;
+    xBuffer=[x(1)*ones(1,half) x x(end)*ones(1,half)];
+k=ones(1,width)/width;
+    xConvolved=conv(xBuffer,k,'same');
+    smoothed=xConvolved(half+1:end-half);
+figure;
+    plot(x,'.');
+    hold on;
+    plot(smoothed,'r-')
