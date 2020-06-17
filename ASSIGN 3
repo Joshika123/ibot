@@ -1,0 +1,20 @@
+PRBLM 4
+
+load randomData.mat;
+[p1,s1,mu1]=polyfit(x,y,1);
+[p2,s2,mu2]=polyfit(x,y,2);
+[p3,s3,mu3]=polyfit(x,y,3);
+[p4,s4,mu4]=polyfit(x,y,4);
+[p5,s5,mu5]=polyfit(x,y,5);
+[y1,delta1] = polyval(p1,x,s1,mu1);
+[y2,delta2] = polyval(p2,x,s2,mu2);
+[y3,delta3] = polyval(p3,x,s3,mu3);
+[y4,delta4] = polyval(p4,x,s4,mu4);
+[y5,delta5] = polyval(p5,x,s5,mu5);
+close all;
+figure;
+plot(x,y,'k.',x,y1,'c',x,y2,'b',x,y3,'m',x,y4,'r',x,y5,'y');
+xlabel('x');
+ylabel('y');
+title('polynomial fit');
+legend('data','p1','p2','p3','p4','p5');
