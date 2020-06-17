@@ -72,6 +72,26 @@ hold on;
 index=linspace(xMin,xMax,count);
 plot(index,poisspdf(lambda,index),'r');
 
+ASSIGNMENT 4
+
+PROBLEM 6
+>> res=200;
+>> x=linspace(0,2*pi,res);
+>> y=sin(x);
+>> figure;
+>> plot(x,y,'r');
+>> xlim([0,2*pi]);
+>> set(gca,'xtick',[0,pi,2*pi],'xticklabel',{'0','1','2'});
+>> set(gca,'ytick',-1:0.5:1);
+>> grid on;
+>> set(gca,'xcolor','cyan','ycolor','black','color','black');
+>> set(gcf,'color',[.3 .3 .3]);
+>> title('One sine wave from 0 to 2\pi', 'fontsize', 14,'fontweight', 'bold','color','white');
+>> xlabel('multiples of \pi','fontsize',12,'color','cyan');
+>> ylabel('sin(x\pi)','fontsize',12,'color','green');
+
+
+
 
 
 
