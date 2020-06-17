@@ -1,0 +1,7 @@
+PRBLM1 
+
+student=[15,25,55,115,144];
+>> semilogy(student,'ms','MarkerSize',10,'LineWidth',4);
+>> title('Student enrollment in 6.094 growth');
+>> xlabel('Years');
+>> ylabel('Students');
